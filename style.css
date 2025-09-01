@@ -2,10 +2,10 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
+  background-color: #363636;
   color: #e0e0e0;
   line-height: 1.6;
-}
+}ч
 
 h1, h2, h3 {
   font-weight: 700;
@@ -20,7 +20,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1a1a1a, #000000);
+  background: linear-gradient(80deg, #363636, #000000);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,11 +143,12 @@ header h1 {
 
 #backBtn:hover {
   background-color: #d4d4d400;
+  color: #ffffff;
 }
 
 /* Слайдер */
 .slider {
-  max-width: 900px;
+  max-width: 700px;
   margin: 50px auto;
   position: relative;
   background-color: #222;
@@ -182,6 +183,8 @@ header h1 {
   font-weight: 600;
 }
 
+
+
 /* Навигационные кнопки слайдера */
 .nav-buttons {
   position: absolute;
@@ -202,13 +205,25 @@ header h1 {
   cursor: pointer;
   border-radius: 50%;
   width: 45px;
-    height: 45px;
+  height: 45px;
   transition: background-color 0.3s ease;
   user-select: none;
 }
 
 .nav-buttons button:hover {
   background-color: #3b3b3b00;
+}
+
+.slide audio {
+  margin-top: 20px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #c5c5c5;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: rgba(177,212,224, .7);
 }
 
 /* Адаптивность */
